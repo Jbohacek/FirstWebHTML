@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+body{
+    color: white;
+    background-color: rgb(30, 30, 30);
+    font-family: Poppins;
+}
+
+article{
+    background-color: rgb(37, 37, 38);
+}
+
+article header{
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+}
+article section{
+    padding: 2%;
+    margin: 10px;
+}
+
+article h1 {
+    color: rgb(227, 116, 49);
+    font-size: 8em;
+    margin: 0 ;
+    padding-left: 5px;
+    
+}
+
+
+.domu-article{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto max-content;
+}
+
+.domu-article header{
+    margin-left: 10px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.domu-article header{
+    grid-column: 1;
+    grid-row: 1;
+}
+.domu-article section{
+    grid-column: 1;
+    grid-row: 2;
+}
+.domu-article img{
+    width: 600px;
+    grid-column: 2;
+    grid-row: 2;
+    margin: 40px;
+}
+
+
+h2{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(156, 220, 254);
+}
+a{
+    color: rgb(39, 107, 204);
+}
+

@@ -2,7 +2,8 @@
 <html lang="cs-cz">
     <head>
         <meta charset="utf-8"/>
-        <title>Moje první webová stránka</title>
+        <link rel="stylesheet" href="Styly\VychoziStyl.css" type="text/css">
+        <title>Moje první  webová stránka</title>
     </head>
     <body>
 
@@ -40,7 +41,7 @@
             
             Muzeme pouzivat procenta nebo cisla
         -->
-        <img src="Pictures\tucnak.jpg" alt="Tucnak" height="20%" width="20%"></img>
+        <img src="Pictures\tucnak.jpg" alt="Tucnak" height="20%" width="20%" class="centrovany"></img><p></p>
         <img src="Pictures\rotatingEarth.gif" alt="Earth" height="125" width="200">
 
         <!-- Odkazy -->
@@ -57,7 +58,7 @@
             tfoot - paticka                 td
         -->
 
-        <table border="1">
+        <table border="1" class="centrovany">
             <tr>
                 <td>Bunka 1</td>
                 <td>Bunka 2</td>
@@ -117,6 +118,49 @@
         </table>
 
         <!-- https://www.itnetwork.cz/html-css/webove-stranky/jak-psat-moderni-web-html-tutorial-seznamy -->
+        <h3>Polozky v seznamu</h3>
 
+        <!--
+            Neuspořádaný seznam <ul>
+
+	        Uspořádaný seznam <ol>
+
+	        Slovníček pojmů <dl>
+
+            li - plozka v seznamu
+        -->
+
+        <h4>NeusporadanySeznam</h4>
+        <ul>
+            <li>Kafe</li>
+            <li>Vodka</li>
+            <li>Voda</li>
+            <li>Caj</li>
+        </ul>
+
+        <!-- 
+            OL ma atributz
+
+            reverserd
+            start
+            type
+         -->
+
+        <h4>Usporadany</h4>
+        <ol reversed="reversed" start="3" type="I">
+            <li value="5">cukr</li>
+            <li>voda</li>
+            <li>ohen</li>
+        </ol>
+
+        <h4>Slovnicek pojmu</h4>
+        <dl>
+            <dt><strong>Tutorail</strong></dt>
+                <dd>Koukam se na tutorail a ucim se dle toho</dd>
+            <dt><strong>neco se naucit</strong></dt>
+                <dd>v to doufam</dd>
+            <dt><strong>neco psat je super</strong></dt>
+                <dd>budliky</dd>
+        </dl>
     </body>
 </html>
