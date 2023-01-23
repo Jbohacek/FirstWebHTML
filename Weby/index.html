@@ -1,166 +1,46 @@
 <!DOCTYPE html>
 <html lang="cs-cz">
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="Styly\VychoziStyl.css" type="text/css">
-        <title>Moje první  webová stránka</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styly\OsobniStrankaStyl.css" type="text/css">
+    <title>Moje portfolio</title>
+</head>
+<body>
+    <article class="domu-article">
+        <header>
+            <h1>O mně</h1>
+        </header>
 
-        <!--p je paragraf-->
-        <p>Prvni paragraf na teto strance</p>
-        <p>Druhy super paragraf na teto strance. <br/> <!--Odradkovani-->
-            Kez by to fungovalo suprvove
-        </p>
+        <section>
 
-        <!-- Upravy textu -->
+            <div>
+                <h2>Ahoj!</h2>
+                <p>Jmenuji se <strong>Jakub</strong> a učím se psat kod v HTML, abych to <strong>uměl</strong><br/>
+                    Protože si myslím, že je to dobré umět
+                </p>
+            </div>
 
-        <p>Tohle je <em>kurizivovy</em> text</p>
-        <p>tohle je <strong>tucny</strong> text</p>
-        <!-- Google na tyhle kouka a nasledne pomaha pri vyhladavani -->
-
-        <p>Tohle je <u>Podrtzeny</u> text</p>
-        <p>Tohle je <s>Presktnuty</s> text</p>
-        <p>Tohle je <mark>Zvyrazneny</mark> text</p>
-
-        <p> Tohle <mark><em><strong><u><s>super duper text</s></u></strong></em></mark>  </p>
-        
-
-        <!-- Nadpisy -->
-
-        <h1>Nadpis h1</h1>
-        <h2>Nadpis h2</h2>
-        <h3>Nadpis h3</h3>
-        <h4>Nadpis h4</h4>
-        <h5>Nadpis h5</h5>
-        <h6>Nadpis h6</h6>
-
-        <!-- Obrazky 
-            Src - source
-            alt - popis obrazku pro nevidici + google se na to kouka
+            <div>
+                <h2>Kde bydlim?</h2>
+                <p>To je tajné, <br/>To nikdo nesmí vědět <s>ani na google mapách nejsem</s></p>
+            </div>
             
-            Muzeme pouzivat procenta nebo cisla
-        -->
-        <img src="Pictures\tucnak.jpg" alt="Tucnak" height="20%" width="20%" class="centrovany"></img><p></p>
-        <img src="Pictures\rotatingEarth.gif" alt="Earth" height="125" width="200">
+            <div>
+                <H2>Hledáš můj kontakt?</H2>
+                <p>Klikni <a href="KontaktniStranka.html">zde</a> , aby ses tam dostal<em>, pokud chceš</em></p>
+            </div>
+            
+            <div>
+                <h2>Hledáš moje zkušenosti?</h2>
+                <p>Klikni <a href="Dovednosti.html">sem</a> a podivej se!</p> 
+            </div>
+            
+        </section>
+        <img src="Pictures\Gigachad.jpg" > 
+    </article>
 
-        <!-- Odkazy -->
-        <a href="https://www.itnetwork.cz/html-css/webove-stranky/jak-psat-moderni-web-html-tutorial-obrazky-odkazy">Odkaz na stranku kde se to ucim</a>
-       
-
-        <!-- Tabulky 
-            tr - table row
-            td - table data
-            th - table head - hlavicka
-
-            thead - prvni radek / zahlavi   th
-            tbody - telo                    td
-            tfoot - paticka                 td
-        -->
-
-        <table border="1" class="centrovany">
-            <tr>
-                <td>Bunka 1</td>
-                <td>Bunka 2</td>
-                <td>Bunka 3</td>
-            </tr>
-            <tr>
-                <td>Bunka 4</td>
-                <td>Bunka 5</td>
-                <td>Bunka 6</td>
-            </tr>
-        </table>
-
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Obrazek</th>
-                    <th>Nazev</th>
-                    <th>Cena</th>
-                    <th>Pocet na sklade</th>
-                    <th>Skladem</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><img src="Pictures\Products\bus.png" width="50%" height="50%"></td>
-                    <td>Autobus</td>
-                    <td>8 000 000 KC</td>
-                    <td>5</td>
-                    <td rowspan="4">ano</td>
-                </tr>
-                <tr>
-                    <td><img src="Pictures\Products\car.png" width="50%" height="50%"></td>
-                    <td>Auto</td>
-                    <td>4 500 000 KC</td>
-                    <td>497</td>
-                </tr>
-                <tr>
-                    <td><img src="Pictures\Products\motorcycle.png" width="50%" height="50%"></td>
-                    <td>Kolo</td>
-                    <td>8 000 KC</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td><img src="Pictures\Products\scooter.png" width="50%" height="50%"></td>
-                    <td>Skooter</td>
-                    <td>80 000KC</td>
-                    <td>10</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="2">4</td>
-                    <td>12 000 000</td>
-                    <td>600</td>
-                </tr>
-            </tfoot>
-        </table>
-
-        <!-- https://www.itnetwork.cz/html-css/webove-stranky/jak-psat-moderni-web-html-tutorial-seznamy -->
-        <h3>Polozky v seznamu</h3>
-
-        <!--
-            Neuspořádaný seznam <ul>
-
-	        Uspořádaný seznam <ol>
-
-	        Slovníček pojmů <dl>
-
-            li - plozka v seznamu
-        -->
-
-        <h4>NeusporadanySeznam</h4>
-        <ul>
-            <li>Kafe</li>
-            <li>Vodka</li>
-            <li>Voda</li>
-            <li>Caj</li>
-        </ul>
-
-        <!-- 
-            OL ma atributz
-
-            reverserd
-            start
-            type
-         -->
-
-        <h4>Usporadany</h4>
-        <ol reversed="reversed" start="3" type="I">
-            <li value="5">cukr</li>
-            <li>voda</li>
-            <li>ohen</li>
-        </ol>
-
-        <h4>Slovnicek pojmu</h4>
-        <dl>
-            <dt><strong>Tutorail</strong></dt>
-                <dd>Koukam se na tutorail a ucim se dle toho</dd>
-            <dt><strong>neco se naucit</strong></dt>
-                <dd>v to doufam</dd>
-            <dt><strong>neco psat je super</strong></dt>
-                <dd>budliky</dd>
-        </dl>
-    </body>
+    
+</body>
 </html>
