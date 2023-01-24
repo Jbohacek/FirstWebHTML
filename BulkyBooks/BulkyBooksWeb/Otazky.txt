@@ -1,0 +1,22 @@
+﻿
+1) otazka .Net framework vs .NET core 6
+	jake jsou rozdili
+	co se mam ucit spis
+
+1.2) jak vytvorit .net framework projekt
+
+2) jak mohu uploudovat net.asp projekt na webserver
+
+3) predavani parametru mezi controlerem a view
+	jak jich mit vice
+	je tam nejake omezeni
+	jak declarovat promeny v tom
+
+4) zeptat se na skolni projekt songs and ups
+
+	zadani
+	udelat neco jako spotify
+		kde se muze hodnotit pisnicky
+		psat zpravy kamaradum
+
+5) Jak funguje kolaborace na Githubu - na projekt

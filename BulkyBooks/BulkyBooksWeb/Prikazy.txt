@@ -1,0 +1,6 @@
+﻿
+Pridani tabulky do migraci (druhe je nazev)
+add-migration AddCategoryToDatabase
+
+Updatovat tabulku
+update-database
