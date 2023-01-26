@@ -1,9 +1,11 @@
-﻿@model IEnumerable<Category>
+﻿@model Spolek
 @{
     ViewData["Title"] = "Index";
 }
 
 <h1>Index Category</h1>
+
+<h1>@Model.HlavniNazev</h1>
 
 <table class="table table-bordered table-striped" style="width:100%">
     <thead>
@@ -17,7 +19,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var obj in Model)
+        @foreach(var obj in Model.ListKatergorii)
         {
             <tr>
                 <td width="50%">

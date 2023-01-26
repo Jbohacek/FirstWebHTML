@@ -17,7 +17,11 @@ namespace BulkyBooksWeb.Controllers
         public IActionResult Index()
         {
             var objCategoryList = _db.Categories.ToList();
-            return View(objCategoryList);
+
+            var novySpolek = new Spolek() {ListKatergorii = objCategoryList,HlavniNazev = "Super" };
+
+
+            return View(novySpolek);
         }
     }
 }
