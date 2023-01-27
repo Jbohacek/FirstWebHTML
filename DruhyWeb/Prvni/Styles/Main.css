@@ -1,11 +1,19 @@
+* {
+  background-color: #282c34;
+  font-family: sans-serif;
+  color: #d7d7d7;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border-top: 10px solid rgb(28, 178, 178);
+}
+
 h1,
 h2,
-h3,
-h4,
-p,
-a,
-li {
-  font-family: sans-serif;
+h3 {
+  color: rgb(28, 178, 178);
 }
 
 h1 {
@@ -16,10 +24,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -31,15 +42,101 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* footer p {
+  font-size: 16px;
+} */
+
+/* article header p {
+  font-style: italic;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#Copyright {
+  font-size: 16px;
+}
+
+.Related-Author {
+  font-size: 18xp;
+  font-weight: bold;
+}
+
+.Related {
+  list-style: none;
+}
+
+aside {
+  border-top: 5px solid rgb(17, 119, 119);
+  border-bottom: 5px solid rgb(17, 119, 119);
+  padding: 50px 0;
+  width: 500px;
+}
+
+aside *,
+aside {
+  background-color: #2f333d;
+}
+
+ul,
+ol {
+  margin-left: 50px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
-footer p {
-  font-size: 16px;
+li:first-child {
+  font-weight: bold;
 }
-article header p {
+
+li:last-child {
   font-style: italic;
+  margin-bottom: 0;
+}
+
+a:link {
+  color: #75c6ff;
+  text-decoration: none;
+}
+a:visited {
+  color: #75c6ff;
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bold;
+  text-decoration: underline dotted;
+}
+a:active {
+  color: orangered;
+}
+
+.MainHeader *,
+.MainHeader {
+  background-color: #21252b;
+}
+.MainHeader {
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.PostHeader {
+  margin-bottom: 40px;
+}
+.postImage {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+.Container {
+  width: 80%;
+  margin: 0 auto;
 }
