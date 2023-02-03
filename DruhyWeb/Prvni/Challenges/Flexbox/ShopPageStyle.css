@@ -4,12 +4,19 @@
   padding: 0;
 }
 .Container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 40px;
   border: 2px #d7d7d7 solid;
 }
+
+.ArticleBody {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
 body {
   background-color: #282c34;
   color: #d7d7d7;
@@ -36,6 +43,8 @@ h2::after {
 
 img {
   margin-left: 10px;
+  border: 0;
+  border-radius: 20px;
 }
 .Price {
   font-size: 30px;
@@ -43,24 +52,36 @@ img {
 .Shipping {
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 20px;
   font-size: 12px;
 }
 
 h4 {
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
+  font-size: 20px;
 }
+.Popis {
+  flex-basis: 400px;
+}
+
 .Obsah {
   margin-left: 20px;
+  margin-bottom: 20px;
+}
+.obsah-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 .Barvy {
   margin-left: 20px;
   margin-bottom: 20px;
+  width: 170px;
 }
 .Barvy button {
+  margin-bottom: 10px;
   margin-left: 10px;
   font-size: 0px;
   width: 40px;
@@ -76,6 +97,7 @@ h4 {
 ul {
   list-style: square;
   margin-left: 20px;
+  margin-right: 10px;
 }
 li {
   margin-bottom: 5px;
